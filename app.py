@@ -8,7 +8,7 @@ import sys
 import datetime
 from hotel.util.util import get_country, date_extract
 from hotel.logger import logging
-from hotel.entity.hotel_predictor import HeartStrokeData, predictor
+from hotel.entity.hotel_predictor import HotelData, predictor
 import pickle
 
 countrylist = pickle.load(open("countryname.pkl", 'rb'))
@@ -118,7 +118,7 @@ def main():
         arrival_date_day_of_month, arrival_date_month, arrival_date_year = date_extract(date=str(arrival_date))
 
 
-        hotel_data = HeartStrokeData(
+        hotel_data = HotelData(
             hotel=hotel,
             lead_time= lead_time,
             arrival_date_year= arrival_date_year,
@@ -141,7 +141,7 @@ def main():
         )
 
 
-        df = hotel_data.get_heart_stroke_input_data_frame()
+        df = hotel_data.get_hotel_input_data_frame()
     except Exception as e:
         logging.error("Error in application code")
         raise HotelException(e, sys) from e
@@ -163,7 +163,7 @@ def main():
         hotel_predictor = predictor(model_dir= MODEL_DIR)
         predicted_value = hotel_predictor.predict(X= df)[0]
         predicted_probability = hotel_predictor.proba_predict(X=df)[0][1]
-        
+
         logging.info("Output of the RUN is: {}".format(predicted_value))
         final_output=predicted_probability * 100
         st.header(

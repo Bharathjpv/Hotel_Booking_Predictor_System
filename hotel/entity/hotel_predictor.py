@@ -7,7 +7,7 @@ from hotel.util.util import load_object
 import pandas as pd
 
 
-class HeartStrokeData:
+class HotelData:
 
     def __init__(self,
                 hotel: float,
@@ -55,7 +55,7 @@ class HeartStrokeData:
         except Exception as e:
             raise HotelException(e, sys) from e
 
-    def get_heart_stroke_input_data_frame(self):
+    def get_hotel_input_data_frame(self):
 
         try:
             heart_stroke_input_dict = self.get_heart_stroke_data_as_dict()
@@ -63,7 +63,7 @@ class HeartStrokeData:
         except Exception as e:
             raise HotelException(e, sys) from e
 
-    def get_heart_stroke_data_as_dict(self):
+    def get_hotel_data_as_dict(self):
         try:
             input_data = {
                 "hotel": [self.hotel],

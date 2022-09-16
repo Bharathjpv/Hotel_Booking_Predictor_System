@@ -4,12 +4,11 @@ from typing import List
 #Declaring variables for setup functions
 PROJECT_NAME="hotel-churn-predictor"
 VERSION="0.0.3"
-AUTHOR="Aravind"
+AUTHOR="Bharath"
 
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 HYPHEN_E_DOT = "-e ."
-
 
 def get_requirements_list() -> List[str]:
     """
