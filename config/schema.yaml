@@ -1,0 +1,48 @@
+FileName: ""
+NumberofColumns: 20
+ColumnNames:
+  hotel : float
+  is_canceled: float
+  lead_time: float
+  arrival_date_year: float
+  arrival_date_month: float
+  arrival_date_day_of_month: float
+  stays_in_weekend_nights: float
+  stays_in_week_nights: float
+  meal: category
+  country: category
+  market_segment: category
+  distribution_channel: category
+  previous_cancellations: float
+  reserved_room_type: flaot
+  booking_changes: float
+  deposit_type: category
+  customer_type: category
+  adr: float
+  total_of_special_requests: float
+  total_guests: float
+
+numerical_columns:
+ - hotel
+ - lead_time
+ - arrival_date_year
+ - arrival_date_month
+ - arrival_date_day_of_month
+ - stays_in_weekend_nights
+ - stays_in_week_nights
+ - previous_cancellations
+ - reserved_room_type
+ - booking_changes
+ - adr
+ - total_of_special_requests
+ - total_guests
+
+categorical_columns:
+ - meal
+ - country
+ - market_segment
+ - distribution_channel
+ - deposit_type
+ - customer_type
+
+target_column: is_canceled

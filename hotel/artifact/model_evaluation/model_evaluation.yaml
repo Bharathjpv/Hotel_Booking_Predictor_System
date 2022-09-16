@@ -1,0 +1,11 @@
+best_model:
+  model_path: D:\Hotel_Booking_Predictor_System\Hotel\artifact\model_trainer\2022-09-16-15-56-09\trained_model\model.pkl
+history:
+  2022-09-16-12-09-10:
+    model_path: D:\Hotel_Booking_Predictor_System\Hotel\artifact\model_trainer\2022-09-16-11-52-04\trained_model\model.pkl
+  2022-09-16-15-30-15:
+    model_path: D:\Hotel_Booking_Predictor_System\Hotel\artifact\model_trainer\2022-09-16-15-30-15\trained_model\model.pkl
+  2022-09-16-15-34-15:
+    model_path: D:\Hotel_Booking_Predictor_System\Hotel\artifact\model_trainer\2022-09-16-15-30-15\trained_model\model.pkl
+  2022-09-16-15-56-09:
+    model_path: D:\Hotel_Booking_Predictor_System\Hotel\artifact\model_trainer\2022-09-16-15-34-15\trained_model\model.pkl

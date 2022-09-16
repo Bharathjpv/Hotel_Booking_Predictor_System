@@ -1,0 +1,9 @@
+pandas
+scikit_learn
+setuptools
+streamlit
+PyYAML
+dill
+xgboost
+evidently
+-e .
