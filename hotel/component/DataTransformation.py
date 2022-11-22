@@ -49,20 +49,7 @@ class DataTransformation:
                 ('one_hot_encoder', OneHotEncoder()),
                 ('scaler', StandardScaler(with_mean=False))
             ]
-            )
-
-            # transform_pipe = Pipeline(steps=[
-            #     ('imputer', SimpleImputer(strategy='median')),
-            #     ('scaler', StandardScaler()),
-            #     ('transformer', PowerTransformer())
-            # ])
-            
-            # binary_pipe = Pipeline(steps=[
-            #     ('imputer', SimpleImputer(strategy='most_frequent')),
-            #     ('binary_transform', BinaryEncoder()),
-            #     ('scaler', StandardScaler(with_mean=False))
-            # ])
-                
+            )   
 
             preprocessor = ColumnTransformer([
                 ('num_pipeline', num_pipeline, numerical_columns),
