@@ -54,8 +54,6 @@ class DataTransformation:
             preprocessor = ColumnTransformer([
                 ('num_pipeline', num_pipeline, numerical_columns),
                 ('cat_pipeline', cat_pipeline, categorical_columns)
-                # ('power_transformer', transform_pipe, transform_columns),
-                # ('binary_transform', binary_pipe, binary_columns)
             ])
                          
             return preprocessor
