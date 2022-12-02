@@ -12,7 +12,6 @@ from hotel.entity.hotel_predictor import HotelData, predictor
 import pickle
 
 countrylist = pickle.load(open("countryname.pkl", 'rb'))
-# countrylist = get_country()
 
 
 ROOT = os.getcwd()
